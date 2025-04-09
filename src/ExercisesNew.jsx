@@ -1,11 +1,16 @@
+import axios from "axios";
+
 export function ExercisesNew({ onCreate }) {
+
   
   const handleSubmit = (event) => {
     event.preventDefault();
     const form = event.target
     const params = new FormData(form);
-    const successCallback = () => form.reset();
-    onCreate(params, successCallback);
+    
+    axios.post("http://localhost:3000/exercises.json", params).then((response => {
+      console.log(response.data);
+    }))
   };
   
   return (

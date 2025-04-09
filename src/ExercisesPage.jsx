@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { ExercisesIndex } from "./ExercisesIndex";
-import { ExercisesNew } from "./ExercisesNew";
+// import { ExercisesNew } from "./ExercisesNew";
 
 export function ExercisesPage() {
   const [exercises, setExercises] = useState([]);
@@ -28,7 +28,7 @@ export function ExercisesPage() {
 
   return (
     <main>
-      <ExercisesNew onCreate={handleCreate}/>
+      {/* <ExercisesNew onCreate={handleCreate}/> */}
       <ExercisesIndex exercises={exercises}/>
     </main>
   )

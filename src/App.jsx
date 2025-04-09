@@ -1,9 +1,11 @@
 import axios from "axios";
 import { createBrowserRouter, Outlet, Route, RouterProvider } from "react-router-dom";
 import { Header } from "./Header";
+import { ExercisesPage } from "./ExercisesPage";
+import { ExercisesNew } from "./ExercisesNew";
+import { WOD } from "./WOD";
 import { SignupPage } from "./SignupPage";
 import { LoginPage } from "./LoginPage";
-import { ExercisesPage } from "./ExercisesPage";
 import { Footer } from "./Footer";
 
 axios.defaults.baseURL = "http://localhost:3000";
@@ -22,6 +24,14 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <ExercisesPage/>,
+      },
+      {
+        path: "/exercises/new",
+        element: <ExercisesNew/>,
+      },
+      {
+        path: "/wod",
+        element: <WOD/>,
       },
       {
         path: "/signup",
