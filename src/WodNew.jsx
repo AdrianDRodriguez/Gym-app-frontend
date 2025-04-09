@@ -1,23 +1,23 @@
 import axios from "axios";
 
-export function ExercisesNew({ onCreate }) {
+export function WodNew({ onCreate }) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
     const form = event.target
     const params = new FormData(form);
     
-    axios.post("http://localhost:3000/exercises.json", params).then((response => {
+    axios.post("http://localhost:3000/wods.json", params).then((response => {
       console.log(response.data);
     }))
   };
   
   return (
     <div>
-      <h1>New Exercise</h1>
+      <h1></h1>
       <form onSubmit={handleSubmit}>
         <div>
-          Name: <input name="name" type="text" />
+          : <input name="name" type="text" />
         </div>
         <div>
           Description: <input name="description" type="text" />

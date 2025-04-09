@@ -1,9 +1,10 @@
 import axios from "axios";
 import { createBrowserRouter, Outlet, Route, RouterProvider } from "react-router-dom";
 import { Header } from "./Header";
+import { WelcomePage } from "./WelcomePage";
 import { ExercisesPage } from "./ExercisesPage";
 import { ExercisesNew } from "./ExercisesNew";
-import { WOD } from "./WOD";
+import { WodNew } from "./WodNew";
 import { SignupPage } from "./SignupPage";
 import { LoginPage } from "./LoginPage";
 import { Footer } from "./Footer";
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
+        element: <WelcomePage/>,
+      },
+      {
+        path: "/exercises",
         element: <ExercisesPage/>,
       },
       {
@@ -31,7 +36,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/wod",
-        element: <WOD/>,
+        element: <WodNew/>,
       },
       {
         path: "/signup",
