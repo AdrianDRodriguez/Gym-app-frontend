@@ -30,7 +30,7 @@ export function Header() {
           <div className="collapse navbar-collapse" id="navbarNavDropdown">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/exercices">Exercices</a>
+                <a className="nav-link active" aria-current="page" href="/exercises">Exercises</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="/exercises/new">Add an exercise</a>

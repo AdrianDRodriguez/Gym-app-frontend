@@ -1,10 +1,14 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { ExercisesIndex } from "./ExercisesIndex";
+import { Modal } from "./Modal";
+import { ExercisesShow } from "./ExercisesShow";
 // import { ExercisesNew } from "./ExercisesNew";
 
 export function ExercisesPage() {
   const [exercises, setExercises] = useState([]);
+  const [isExercisesShowVisible, setItExercisesShowVisible] = useState(false);
+  const [currentExercise, setCurrentExercise] = useState({});
 
   const handleIndex = () => {
     console.log("handleIndex")
@@ -23,13 +27,23 @@ export function ExercisesPage() {
     });
   };
 
+  const handleShow = (exercise) => {
+    console.log("handleShow", exercise);
+    setItExercisesShowVisible(true);
+    setCurrentExercise(exercise);
+  };
+
   useEffect(handleIndex, []);
 
 
   return (
     <main>
       {/* <ExercisesNew onCreate={handleCreate}/> */}
-      <ExercisesIndex exercises={exercises}/>
+      <ExercisesIndex exercises={exercises} onShow={handleShow}/>
+      <Modal show={isExercisesShowVisible} onClose={() => setItExercisesShowVisible(false)}>
+        {/* {console.log("current exercise inside modal", currentExercise)} */}
+        <ExercisesShow exercise={currentExercise}/>
+      </Modal>
     </main>
   )
 }

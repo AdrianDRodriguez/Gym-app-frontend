@@ -1,4 +1,4 @@
-export function ExercisesIndex({ exercises }) {
+export function ExercisesIndex({ exercises, onShow }) {
   return (
     <div>
       <h1>All Exercises</h1>
@@ -8,6 +8,7 @@ export function ExercisesIndex({ exercises }) {
           <p>{exercise.description}</p>
           <p>{exercise.image_url}</p>
           <p>{exercise.video_url}</p>
+          <button onClick={() => onShow(exercise)}>More info</button>
         </div>
       ))}
     </div>
