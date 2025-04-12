@@ -41,7 +41,6 @@ export function ExercisesPage() {
       {/* <ExercisesNew onCreate={handleCreate}/> */}
       <ExercisesIndex exercises={exercises} onShow={handleShow}/>
       <Modal show={isExercisesShowVisible} onClose={() => setItExercisesShowVisible(false)}>
-        {/* {console.log("current exercise inside modal", currentExercise)} */}
         <ExercisesShow exercise={currentExercise}/>
       </Modal>
     </main>
