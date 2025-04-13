@@ -9,6 +9,7 @@ export function ExercisesNew({ onCreate }) {
     
     axios.post("http://localhost:3000/exercises.json", params).then((response => {
       console.log(response.data);
+      window.location.href = '/'
     }))
   };
   

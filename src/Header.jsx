@@ -41,7 +41,8 @@ export function Header() {
                 </a>
                 <ul className="dropdown-menu">
                   {authenticationLinks}
-                  <li><a className="dropdown-item" href="/">My WODs</a></li>
+                  <li><a className="dropdown-item" href="/wods/new">Create a WOD</a></li>
+                  <li><a className="dropdown-item" href="/wods">My WODs</a></li>
                 </ul>
               </li>
             </ul>
