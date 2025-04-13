@@ -9,27 +9,33 @@ export function ExercisesNew({ onCreate }) {
     
     axios.post("http://localhost:3000/exercises.json", params).then((response => {
       console.log(response.data);
-      window.location.href = '/'
+      window.location.href = '/exercises'
     }))
   };
   
   return (
     <div>
       <h1>New Exercise</h1>
-      <form onSubmit={handleSubmit}>
-        <div>
-          Name: <input name="name" type="text" />
+      <form className="row g-3" onSubmit={handleSubmit}>
+        <div className="col-md-6">
+          <label className="form-label">Name:</label>
+          <input name="name" type="text" className="form-control" id="inputEmail4"/>
         </div>
-        <div>
-          Description: <input name="description" type="text" />
+        <div className="mb-3">
+          <label className="form-label">Description:</label>
+          <textarea name="description" className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
         </div>
-        <div>
-          Image: <input name="image_url" type="text" />
+        <div className="col-12">
+          <label className="form-label">Image:</label>
+          <input name="image_url"  type="text" className="form-control" id="inputAddress" placeholder="Image Url Here"/>
         </div>
-        <div>
-          Video: <input name="video_url" type="text" />
+        <div className="col-12">
+          <label className="form-label">Video Example:</label>
+          <input name="video_url"  type="text" className="form-control" id="inputAddress2" placeholder="Video Url Here"/>
         </div>
-        <button type="submit">Create</button>
+        <div className="col-12">
+          <button type="submit" className="btn btn-primary">Add Exercise</button>
+        </div>
       </form>
     </div>
   );

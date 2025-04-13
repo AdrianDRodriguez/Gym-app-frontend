@@ -4,6 +4,7 @@ import { Header } from "./Header";
 import { WelcomePage } from "./WelcomePage";
 import { ExercisesPage } from "./ExercisesPage";
 import { ExercisesNew } from "./ExercisesNew";
+import { WodsPage } from "./WodsPage";
 import { WodsNew } from "./WodsNew";
 import { SignupPage } from "./SignupPage";
 import { LoginPage } from "./LoginPage";
@@ -40,7 +41,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/wods",
-        element: <WodPage/>,
+        element: <WodsPage/>,
       },
       {
         path: "/signup",
