@@ -17,11 +17,14 @@ export function WodsNew({ onCreate }) {
     <div>
       <h1></h1>
       <form onSubmit={handleSubmit}>
-        <div>
-          Exercise: <input name="name" type="text" />
+      <div>
+          User: <input name="user_id" type="text" />
         </div>
         <div>
-          Reps: <input name="description" type="text" />
+          Exercise: <input name="exercise_id" type="text" />
+        </div>
+        <div>
+          Reps: <input name="reps" type="text" />
         </div>
         <button type="submit">Create</button>
       </form>

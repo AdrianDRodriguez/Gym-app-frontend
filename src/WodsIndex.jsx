@@ -5,8 +5,8 @@ export function WodsIndex({ wods }) {
     {wods ? (
       wods.map((wod) => (
         <div key={wod.id}>
-          <p>Exercise Name:{wod.id}</p>
           <p>User:{wod.user_id}</p>
+          <p>Exercise:{wod.exercise_id}</p>
           <p>Reps:{wod.reps}</p>
         </div>
       ))
