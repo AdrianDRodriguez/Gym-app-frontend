@@ -16,14 +16,16 @@ export function WodsNew({ exercise }) {
   return (
     <div>
       <h1></h1>
-      <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "10px" }} id="dropdown.and.button">
+      <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
         <div>
-          Exercise: <input name="exercise_id" type="text"/>
+          <label for="formGroupExampleInput" class="form-label">Exercise</label>
+          <input name="exercise_id" type="text" class="form-control"/>
         </div>
         <div>
-          Reps: <input name="reps" type="text" />
+          <label for="formGroupExampleInput2" class="form-label">Reps</label>
+          <input name="reps" type="text" class="form-control"/>
         </div>
-        <button type="submit">Create</button>
+        <button type="submit" class="btn btn-outline-dark">Add exercise</button>
       </form>
     </div>
   );

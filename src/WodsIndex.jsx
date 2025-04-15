@@ -19,11 +19,12 @@ import { useState, useEffect } from 'react'
       <h1>All WODs</h1>
           {wods ? (
             wods.map((wod) => (
-              <div key={wod.id}>
-                <p>User: {wod.user_id}</p>
-                <p>Exercise: {wod.exercise.name}</p>
-                <p>Reps: {wod.reps}</p>
+            <div class="card text-center mb-3" style={{width: "18rem"}} key={wod.id}>
+              <div class="card-body">
+                <h5 class="card-title">Exercise: {wod.exercise.name}</h5>
+                <p class="card-text">Reps: {wod.reps}</p>
               </div>
+            </div>
             ))
           ) : (
             <p>Loading WODs...</p>
