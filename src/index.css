@@ -1,3 +1,17 @@
 html {
   scroll-behavior: smooth;
 }
+
+h1.card-title {
+  margin-top: 4em;
+  text-align: center;
+}
+
+p#welcome.page.card-text {
+  margin-left: 5em;
+  margin-right: 5em;
+  color: rgb(228, 142, 142);
+  text-align: center;
+  font-size: large;
+  font-family: 'Courier New', Courier, ;
+}

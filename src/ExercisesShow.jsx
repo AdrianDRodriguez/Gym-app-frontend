@@ -1,3 +1,6 @@
+// import axios from "axios";
+import { WodsNew } from "./WodsNew";
+
 export function ExercisesShow({ exercise }) {
   const youtubeId = getYouTubeId(exercise.video_url);
 
@@ -18,30 +21,15 @@ export function ExercisesShow({ exercise }) {
           ) : (
           <p>Invalid URL</p>
         )}
-      </div>
-      <div style={{ display: "flex", flexDirection: "column", gap: "10px" }} id="dropdown.and.button">
-
-        <select class="form-select form-select-sm" aria-label="Small select example">
-          <option selected>How many reps you want to add?</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-          <option value="9">9</option>
-          <option value="10">10</option>
-        </select>
-
-        <button type="button" class="btn btn-outline-dark">Add exercise</button>
-
-      </div>
-
+        </div>
+      <WodsNew/>
     </div>
   );
 }
+
+
+
+
 
 // This function helps to extract the Youtube ID
 function getYouTubeId(url) {

@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export function WodsNew({ onCreate }) {
+export function WodsNew({ exercise }) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -16,12 +16,9 @@ export function WodsNew({ onCreate }) {
   return (
     <div>
       <h1></h1>
-      <form onSubmit={handleSubmit}>
-      <div>
-          User: <input name="user_id" type="text" />
-        </div>
+      <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "10px" }} id="dropdown.and.button">
         <div>
-          Exercise: <input name="exercise_id" type="text" />
+          Exercise: <input name="exercise_id" type="text"/>
         </div>
         <div>
           Reps: <input name="reps" type="text" />

@@ -5,7 +5,7 @@ import { WelcomePage } from "./WelcomePage";
 import { ExercisesPage } from "./ExercisesPage";
 import { ExercisesNew } from "./ExercisesNew";
 import { WodsPage } from "./WodsPage";
-import { WodsNew } from "./WodsNew";
+// import { WodsNew } from "./WodsNew";
 import { SignupPage } from "./SignupPage";
 import { LoginPage } from "./LoginPage";
 import { Footer } from "./Footer";
@@ -35,10 +35,10 @@ const router = createBrowserRouter([
         path: "/exercises/new",
         element: <ExercisesNew/>,
       },
-      {
-        path: "/wods/new",
-        element: <WodsNew/>,
-      },
+      // {
+      //   path: "/wods/new",
+      //   element: <WodsNew/>,
+      // },
       {
         path: "/wods",
         element: <WodsPage/>,

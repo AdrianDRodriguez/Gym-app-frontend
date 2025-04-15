@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export function ExercisesNew({ onCreate }) {
+export function ExercisesNew() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
