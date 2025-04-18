@@ -17,15 +17,17 @@ export function WodsNew({ exercise }) {
     <div>
       <h1></h1>
       <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+        {/* hello
+      {JSON.stringify(exercise)} */}
         <div>
-          <label for="formGroupExampleInput" class="form-label">Exercise</label>
-          <input name="exercise_id" type="text" class="form-control"/>
+          <label for="formGroupExampleInput" className="form-label">Exercise</label>
+          <input name="exercise_id" type="hidden" className="form-control" value={exercise.id}/>
         </div>
         <div>
-          <label for="formGroupExampleInput2" class="form-label">Reps</label>
-          <input name="reps" type="text" class="form-control"/>
+          <label for="formGroupExampleInput2" className="form-label">Reps</label>
+          <input name="reps" type="text" className="form-control"/>
         </div>
-        <button type="submit" class="btn btn-outline-dark">Add exercise</button>
+        <button type="submit" className="btn btn-outline-dark">Add exercise</button>
       </form>
     </div>
   );

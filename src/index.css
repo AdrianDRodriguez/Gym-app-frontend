@@ -27,3 +27,13 @@ div.card.mb-3 {
   margin-left: 5em;
   margin-right: 5em;
 }
+
+h1#new {
+  text-align: center;
+  margin-top: 2em;
+}
+
+form.row.g-3 {
+  margin-left: 8em;
+  margin-right: 8em;
+}

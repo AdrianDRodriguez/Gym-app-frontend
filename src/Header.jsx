@@ -23,7 +23,7 @@ export function Header() {
     <header>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
-          <a className="navbar-brand" href="/">HyperBox</a>
+          <a className="navbar-brand" href="/">HYPERBOX</a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -42,7 +42,7 @@ export function Header() {
                 <ul className="dropdown-menu">
                   {authenticationLinks}
                   {/* <li><a className="dropdown-item" href="/wods/new">Create a WOD</a></li> */}
-                  <li><a className="dropdown-item" href="/wods">My WODs</a></li>
+                  <li><a className="dropdown-item" href="/wods">My WOD</a></li>
                 </ul>
               </li>
             </ul>

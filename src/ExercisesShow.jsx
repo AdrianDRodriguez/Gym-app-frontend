@@ -22,7 +22,7 @@ export function ExercisesShow({ exercise }) {
           <p>Invalid URL</p>
         )}
         </div>
-      <WodsNew/>
+      <WodsNew exercise={exercise}/>
     </div>
   );
 }
