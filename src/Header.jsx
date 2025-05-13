@@ -20,17 +20,24 @@ let authenticationLinks;
 
 export function Header() {
   return (
-    <header className="navbar navbar-dark bg-dark fixed-top top-0 w-100 px-4">
-      <span className="navbar-brand">HYPERBOX</span>
-      <nav>
-        <a href="/" className="text-white me-3 fw-bold">Home</a>
-        <a href="/wods" className="text-muted me-3">Features</a>
-        <ul>
-          {authenticationLinks}
-          <a href="/signup" className="text-muted">Signup</a>
-          <a href="/login" className="text-muted">Login</a>
-        </ul>
-      </nav>
-    </header>
+<header className="mb-auto py-3">
+<div className="container text-center">
+  <h3 className="fw-bold text-white mb-0">HYPERBOX</h3>
+  <nav className="nav justify-content-center mt-2">
+    <a className="nav-link px-3 text-white" href="/">Home</a>
+    <a className="nav-link px-3 text-secondary" href="/exercises">Exercises</a>
+    <a className="nav-link px-3 text-secondary" href="/exercises/new">Add an exercise</a>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Member Management
+      </a>
+      <ul class="dropdown-menu">
+        {authenticationLinks}
+        <li><a className="dropdown-item" href="wods">My WOD</a></li>
+      </ul>
+    </li>
+  </nav>
+</div>
+</header>
   )
 }

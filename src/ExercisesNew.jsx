@@ -14,9 +14,9 @@ export function ExercisesNew() {
   };
   
   return (
-    <div>
+    <div className="container text-center">
       <h1 id="new">New Exercise</h1>
-      <form className="row g-3" onSubmit={handleSubmit}>
+      <form className="row g-3 justify-content-center mt-2" onSubmit={handleSubmit}>
         <div className="col-md-6">
           <label className="form-label">Name:</label>
           <input name="name" type="text" className="form-control" id="inputEmail4"/>

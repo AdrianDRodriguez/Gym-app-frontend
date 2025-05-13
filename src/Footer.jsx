@@ -1,9 +1,9 @@
 export function Footer() {
   return (
-    <footer className="text-center py-3 text-muted small position-absolute bottom-0 w-100">
-      <p>
-        Copyright 2025 Adrian Rodriguez
-      </p>
+    <footer className="text-center text-white py-3 bg-dark mt-auto">
+      <div className="container">
+        <small>© 2025 Hyperbox. All rights reserved.</small>
+      </div>
     </footer>
   );
 };
