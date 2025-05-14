@@ -1,5 +1,14 @@
-html {
-  scroll-behavior: smooth;
+header.mb-auto.py-3 {
+  background-color: black;
+}
+
+
+footer#footer {
+  background-color: white;
+}
+
+main#homepage-text {
+  padding: 150px;
 }
 
 h1.display-1 {
@@ -14,22 +23,20 @@ div.card.mb-3 {
   margin-right: 5em;
 }
 
-form.row.g-3 {
-  margin-left: 8em;
-  margin-right: 8em;
+form.form-group {
+  width: 36%;
+  margin: auto;
+  background-color: rgb(255, 255, 255);
 }
 
-html,
-body,
-#root {
-  height: 100%;
+div#login.container.text-center {
+  margin-right: auto;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-}
 
-main {
-  flex: 1;
+.bg-hero {
+  background-image: url('./assets/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }

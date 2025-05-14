@@ -14,27 +14,27 @@ export function ExercisesNew() {
   };
   
   return (
-    <div className="container text-center">
-      <h1 id="new">New Exercise</h1>
-      <form className="row g-3 justify-content-center mt-2" onSubmit={handleSubmit}>
-        <div className="col-md-6">
+    <div className="container">
+      <form className="form-group text-black bg p-5 rounded" onSubmit={handleSubmit}>
+        <h1 className="text-center">New Exercise</h1>
+        <div className="mt-5">
           <label className="form-label">Name:</label>
           <input name="name" type="text" className="form-control" id="inputEmail4"/>
         </div>
-        <div className="mb-3">
+        <div className="mt-3">
           <label className="form-label">Description:</label>
-          <textarea name="description" className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          <textarea name="description" className="form-control" rows="3"></textarea>
         </div>
-        <div className="col-12">
+        <div className="mt-3">
           <label className="form-label">Image:</label>
-          <input name="image_url"  type="text" className="form-control" id="inputAddress" placeholder="Image Url Here"/>
+          <input name="image_url"  type="text" className="form-control" placeholder="Image Url Here"/>
         </div>
-        <div className="col-12">
+        <div className="mt-3">
           <label className="form-label">Video Example:</label>
-          <input name="video_url"  type="text" className="form-control" id="inputAddress2" placeholder="Video Url Here"/>
+          <input name="video_url"  type="text" className="form-control" placeholder="Video Url Here"/>
         </div>
-        <div className="col-12">
-          <button type="submit" className="btn btn-primary">Add Exercise</button>
+        <div className="mt-3">
+          <button type="submit" className="btn btn-warning col-md-12">Add Exercise</button>
         </div>
       </form>
     </div>
