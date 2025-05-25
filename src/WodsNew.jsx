@@ -17,10 +17,7 @@ export function WodsNew({ exercise }) {
     <div>
       <h1></h1>
       <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-        {/* hello
-      {JSON.stringify(exercise)} */}
         <div>
-          <label for="formGroupExampleInput" className="form-label">Exercise</label>
           <input name="exercise_id" type="hidden" className="form-control" value={exercise.id}/>
         </div>
         <div>

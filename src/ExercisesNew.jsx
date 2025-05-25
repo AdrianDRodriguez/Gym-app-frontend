@@ -15,7 +15,7 @@ export function ExercisesNew() {
   
   return (
     <div className="container">
-      <form className="form-group text-black bg p-5 rounded" onSubmit={handleSubmit}>
+      <form className="form-group text-white bg p-5 rounded" onSubmit={handleSubmit}>
         <h1 className="text-center">New Exercise</h1>
         <div className="mt-5">
           <label className="form-label">Name:</label>

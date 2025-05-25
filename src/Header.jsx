@@ -21,7 +21,7 @@ let authenticationLinks;
 export function Header() {
   return (
 <header className="mb-auto py-3">
-  <div className="container text-center">
+  <div className="container text-center text-white">
     <h3 className="fw-bold mb-0">HYPERBOX</h3>
     <nav className="nav justify-content-center mt-2">
       <a className="nav-link px-3 text-white" href="/">Home</a>

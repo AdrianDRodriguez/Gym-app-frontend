@@ -5,7 +5,7 @@ export function ExercisesShow({ exercise }) {
   const youtubeId = getYouTubeId(exercise.video_url);
 
   return (
-    <div>
+    <div className="text-black">
       <h1>Exercise Example</h1>
       <div style={{ display: "flex", gap: "20px" }} id="video">
         {youtubeId ? (
