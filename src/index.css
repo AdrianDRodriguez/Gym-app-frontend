@@ -15,9 +15,8 @@ body {
 }
 
 h1.display-1 {
-  margin-top: 1em;
-
   text-align: center;
+  margin-bottom: 40px;
 }
 
 div.card.mb-3 {
@@ -27,7 +26,7 @@ div.card.mb-3 {
 form.form-group {
   width: 36%;
   margin: auto;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(31, 29, 29);
 }
 
 div#login.container.text-center {
@@ -40,4 +39,32 @@ div#login.container.text-center {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+div#exercises_index {
+  margin: auto;
+  width: 40%;
+}
+
+/* .exercise-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+  margin: 0 auto;
+} */
+
+.exercise-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #f8f9fa;
+  /* light background for card look */
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* optional, for a soft shadow */
 }
