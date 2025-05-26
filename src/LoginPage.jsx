@@ -29,9 +29,9 @@ export function LoginPage() {
   };
 
   return (
-    <div className="container text-center" id="login">
-      <h1 className="h3 mb-3 fw-normal">Login</h1>
-      <form onSubmit={handleSubmit}>
+    <div className="container" id="login">
+      <form className="form-group text-white bg p-5 rounded" onSubmit={handleSubmit}>
+        <h1 className="text-center">Login</h1>
         <div className="mb-3">
           <label for="exampleInputEmail1" className="form-label">Email address</label>
           <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
