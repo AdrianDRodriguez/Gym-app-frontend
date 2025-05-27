@@ -15,29 +15,32 @@ import { useState, useEffect } from 'react'
    useEffect(getWods, [])
   
   return (
-    <div>
-      <h1>All WODs</h1>
-          {wods ? (
-            wods.map((wod) => (
-              <div className="row row-cols-1 row-cols-md-3 g-4" key={wod.id}>
-              <div className="col">
-                <div className="card h-100">
-                  <img src={exercise} className="card-img-top" alt="..."/>
-                  <div className="card-body">
-                    <h5 className="card-title">Exercise: {wod.exercise.name}</h5>
-                    <p className="card-text">Reps: {wod.reps}</p>
-                  </div>
-                  <div className="card-footer">
-                    <small className="text-body-secondary">Last updated 3 mins ago</small>
-                  </div>
-                </div>
-              </div>
+    <div className="wods-page">
+      <h1 className="page-title">YOUR WOD</h1>
+
+      {!localStorage.jwt && (
+        <div className="alert alert-info">
+          <p>🚀 Hey there! You need to <strong>create an account</strong> or <strong>log in</strong> to view and create your own WODs!</p>
+          <div className="auth-buttons">
+            <a href="/login" className="btn btn-primary ">Log In</a>
+            <a href="/signup" className="btn btn-secondary ">Sign Up</a>
+          </div>
+        </div>
+      )}
+
+      {wods ? (
+        wods.map((wod) => (
+          <div key={wod.id} className="wod-card">
+            <div className="wod-header">
+              <h3>Exercise: {wod.exercise.name}</h3>
+              <p>Reps: {wod.reps}</p>
             </div>
-            ))
-          ) : (
-            <p>Loading WODs...</p>
-          )}
-  </div>
+          </div>
+        ))
+      ) : (
+        <p>Loading WODs...</p>
+      )}
+    </div>
   );
 }
 

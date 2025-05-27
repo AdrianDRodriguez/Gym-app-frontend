@@ -46,14 +46,7 @@ div#exercises_index {
   width: 40%;
 }
 
-/* .exercise-image {
-  width: 100%;
-  max-height: 300px;
-  object-fit: cover;
-  object-position: top;
-  display: block;
-  margin: 0 auto;
-} */
+
 
 .exercise-card {
   display: flex;
@@ -67,4 +60,101 @@ div#exercises_index {
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   /* optional, for a soft shadow */
+}
+
+
+
+.wods-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.page-title {
+  text-align: center;
+  margin-bottom: 32px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+
+
+.wod-card {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.wod-card:hover {
+  transform: scale(1.01);
+}
+
+.wod-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wod-header h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.wod-header p {
+  margin: 0;
+  font-weight: bold;
+}
+
+
+
+.alert {
+  background-color: #e0f7fa;
+  color: #ffffff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.alert strong {
+  font-weight: bold;
+}
+
+
+
+.auth-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.auth-buttons .btn {
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.auth-buttons .btn-primary {
+  background-color: #ffae00;
+  color: white;
+}
+
+.auth-buttons .btn-primary:hover {
+  background-color: #efa70b;
+}
+
+.auth-buttons .btn-secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.auth-buttons .btn-secondary:hover {
+  background-color: #5a6268;
 }
