@@ -6,9 +6,34 @@ footer#footer {
   background-color: white;
 }
 
-main#homepage-text {
-  padding: 150px;
+
+
+.welcome-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  /* Dark overlay */
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  text-align: center;
+  color: white;
+  margin: 0 auto;
 }
+
+.welcome-overlay {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
 
 body {
   background-color: white;
@@ -41,12 +66,12 @@ div#login.container.text-center {
   background-repeat: no-repeat;
 }
 
+
+
 div#exercises_index {
   margin: auto;
   width: 40%;
 }
-
-
 
 .exercise-card {
   display: flex;

@@ -35,10 +35,6 @@ const router = createBrowserRouter([
         path: "/exercises/new",
         element: <ExercisesNew/>,
       },
-      // {
-      //   path: "/wods/new",
-      //   element: <WodsNew/>,
-      // },
       {
         path: "/wods",
         element: <WodsPage/>,
