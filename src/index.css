@@ -191,3 +191,25 @@ div#exercises_index {
 .auth-buttons .btn-secondary:hover {
   background-color: #5a6268;
 }
+
+
+.wod-btn {
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.edit-btn {
+  background-color: #ffc107;
+  /* warning yellow */
+  color: #000;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  /* danger red */
+  color: #fff;
+}

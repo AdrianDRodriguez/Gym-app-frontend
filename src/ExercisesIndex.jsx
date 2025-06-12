@@ -5,9 +5,6 @@ export function ExercisesIndex({ exercises, onShow }) {
       <div id="exercises_index">
         {exercises.map((exercise) => (
         <div key={exercise.id} className="row align-items-center">
-          {/* <div className="col-md-7">
-            <img src={exercise.image_url} className="exercise-image"/>
-          </div> */}
           <div className="exercise-card">
             <h1>{exercise.name}</h1>
             <p>{exercise.description}</p>
