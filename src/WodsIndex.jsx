@@ -27,7 +27,7 @@ import { useState, useEffect } from 'react'
         }
       }
     };
-
+ 
     const handleUpdate = async (id) => {
       try{
         const response = await axios.patch(`http://localhost:3000/wods/${id}.json`, {reps: editReps});
@@ -49,7 +49,7 @@ import { useState, useEffect } from 'react'
 
       {!localStorage.jwt && (
         <div className="alert alert-info">
-          <p>🚀 Hey there! You need to <strong>create an account</strong> or <strong>log in</strong> to view and create your own WODs!</p>
+          <p>🚀 Hey there! You need to <strong>create an account</strong> or <strong>log in</strong> to view and create your own WOD!</p>
           <div className="auth-buttons">
             <a href="/login" className="btn btn-primary ">Log In</a>
             <a href="/signup" className="btn btn-secondary ">Sign Up</a>

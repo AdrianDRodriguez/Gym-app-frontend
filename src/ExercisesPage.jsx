@@ -3,14 +3,13 @@ import { useState, useEffect } from "react";
 import { ExercisesIndex } from "./ExercisesIndex";
 import { Modal } from "./Modal";
 import { ExercisesShow } from "./ExercisesShow";
-// import { ExercisesNew } from "./ExercisesNew";
-// import { Rating } from '@smastrom/react-rating';
+
 
 export function ExercisesPage() {
   const [exercises, setExercises] = useState([]);
   const [isExercisesShowVisible, setItExercisesShowVisible] = useState(false);
   const [currentExercise, setCurrentExercise] = useState({});
-  // const [rating, setRating] = useState(0)
+  
 
   const handleIndex = () => {
     console.log("handleIndex")
@@ -44,7 +43,6 @@ export function ExercisesPage() {
       <ExercisesIndex exercises={exercises} onShow={handleShow}/>
       <Modal show={isExercisesShowVisible} onClose={() => setItExercisesShowVisible(false)}>
         <ExercisesShow exercise={currentExercise}/>
-        {/* <Rating style={{ maxWidth: 250 }} value={rating} onChange={setRating} /> */}
       </Modal>
     </main>
   )

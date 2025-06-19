@@ -1,5 +1,5 @@
-// import axios from "axios";
 import { WodsNew } from "./WodsNew";
+import { ExerciseRating } from "./Components/ExerciseRating";
 
 export function ExercisesShow({ exercise }) {
   const youtubeId = getYouTubeId(exercise.video_url);
@@ -22,6 +22,8 @@ export function ExercisesShow({ exercise }) {
           <p>Invalid URL</p>
         )}
         </div>
+        <br />
+      <ExerciseRating/>
       <WodsNew exercise={exercise}/>
     </div>
   );
