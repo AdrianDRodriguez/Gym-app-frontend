@@ -1,5 +1,5 @@
 import { WodsNew } from "./WodsNew";
-import { ExerciseRating } from "./Components/ExerciseRating";
+import { ExercisesRating } from "./Components/ExercisesRating";
 
 export function ExercisesShow({ exercise }) {
   const youtubeId = getYouTubeId(exercise.video_url);
@@ -23,7 +23,7 @@ export function ExercisesShow({ exercise }) {
         )}
         </div>
         <br />
-      <ExerciseRating/>
+      <ExercisesRating exerciseId={exercise.id}/>
       <WodsNew exercise={exercise}/>
     </div>
   );
