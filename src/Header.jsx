@@ -33,7 +33,7 @@ export function Header() {
         </a>
         <ul className="dropdown-menu">
           {authenticationLinks}
-          <li><a className="dropdown-item" href="wods">My WOD</a></li>
+          <li><a className="dropdown-item" href="/wods">My WOD</a></li>
         </ul>
       </li>
     </nav>

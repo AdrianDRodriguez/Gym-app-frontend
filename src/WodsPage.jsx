@@ -1,8 +1,10 @@
 import axios from "axios";
+import { useLoaderData } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { WodsIndex } from "./WodsIndex";
 
 export function WodsPage() {
+  const wodds = useLoaderData
   const [wods, setWods] = useState([]);
 
   const handleIndex = () => {
