@@ -8,7 +8,7 @@ export function WodsPage() {
   const [wods, setWods] = useState([]);
 
   const handleIndex = () => {
-    axios.get("http://localhost:3000/wods.json").then((response) => {setWods(response.data)});
+    axios.get("/wods.json").then((response) => {setWods(response.data)});
   };
 
   useEffect(handleIndex, []);

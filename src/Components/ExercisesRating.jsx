@@ -27,7 +27,7 @@ export function ExercisesRating({ exerciseId }) {
   const submitRating = async (value) => {
     console.log("exerciseId:", exerciseId, "value:", value);
     try {
-      await axios.post("http://localhost:3000/ratings.json", {
+      await axios.post("/ratings.json", {
         rating: {
           exercise_id: exerciseId,
           value: value,

@@ -10,7 +10,7 @@ import { SignupPage } from "./SignupPage";
 import { LoginPage } from "./LoginPage";
 import { Footer } from "./Footer";
 
-axios.defaults.baseURL = "http://localhost:3000";
+axios.defaults.baseURL = import.meta.env.MODE === "development" ? "http://localhost:3000" : "https://gym-fitness-api-etx0.onrender.com";
 axios.defaults.withCredentials = true;
 
 const router = createBrowserRouter([

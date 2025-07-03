@@ -9,17 +9,16 @@ import { useState, useEffect } from 'react'
 
 
    const getWods  = () => {
-     axios.get("http://localhost:3000/wods.json").then(response => {
+     axios.get("/wods.json").then(response => {
        console.log(response.data)
        setWods(response.data)
      })
-     console.log('getting wods')
    }
 
    const handleDelete = async (id) => {
     if (confirm("Are you sure you want to delete this WOD?")) {
       try {
-        await axios.delete(`http://localhost:3000/wods/${id}.json`);
+        await axios.delete(`/wods/${id}.json`);
         // Refresh the list by removing the deleted one
         setWods((prev) => prev.filter((wod) => wod.id !== id));
         } catch (err) {
@@ -30,7 +29,7 @@ import { useState, useEffect } from 'react'
  
     const handleUpdate = async (id) => {
       try{
-        const response = await axios.patch(`http://localhost:3000/wods/${id}.json`, {reps: editReps});
+        const response = await axios.patch(`/wods/${id}.json`, {reps: editReps});
         setWods((prev) => 
           prev.map((wod) => (wod.id === id ? response.data : wod))
         );

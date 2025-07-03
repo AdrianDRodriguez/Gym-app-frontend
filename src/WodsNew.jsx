@@ -7,7 +7,7 @@ export function WodsNew({ exercise }) {
     const form = event.target
     const params = new FormData(form);
     
-    axios.post("http://localhost:3000/wods.json", params).then((response => {
+    axios.post("/wods.json", params).then((response => {
       console.log(response.data);
       window.location.href = "/wods"
     }))

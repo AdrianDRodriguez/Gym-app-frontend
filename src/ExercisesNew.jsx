@@ -9,7 +9,7 @@ export function ExercisesNew() {
     const form = event.target
     const params = new FormData(form);
     
-    axios.post("http://localhost:3000/exercises.json", params).then((response => {
+    axios.post("/exercises.json", params).then((response => {
       console.log(response.data);
       window.location.href = '/exercises'
     }))

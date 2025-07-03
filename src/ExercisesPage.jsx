@@ -12,16 +12,14 @@ export function ExercisesPage() {
   
 
   const handleIndex = () => {
-    console.log("handleIndex")
-    axios.get("http://localhost:3000/exercises.json").then ((response) => {
+    axios.get("/exercises.json").then ((response) => {
       console.log(response.data)
       setExercises(response.data)
     });
   };
 
   const handleCreate = (params, successCallback) => {
-    console.log("handlecreate");
-    axios.post("http://localhost:3000/exercises.json", params).then((response) => {
+    axios.post("/exercises.json", params).then((response) => {
       setExercises([...exercises, response.data]);
       console.log(response.data)
       successCallback();
