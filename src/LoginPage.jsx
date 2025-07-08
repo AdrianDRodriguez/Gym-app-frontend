@@ -41,7 +41,7 @@ export function LoginPage() {
           <input name="password" type="password" className="form-control" id="exampleInputPassword1"/>
         </div>
         <div className="mt-3">
-          <button type="submit" className="btn btn-warning col-md-12">Signup</button>
+          <button type="submit" className="btn btn-warning col-md-12">Login</button>
         </div>
       </form>
     </div>
