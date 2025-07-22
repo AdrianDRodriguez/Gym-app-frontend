@@ -33,7 +33,7 @@ List the ready features here:
 
 
 ## Screenshots
-![App screenshot](img/ScreenshotExample.png)
+![App screenshot](./public/img/ScreenshotExample.png)
 
 
 ## Setup
