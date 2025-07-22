@@ -33,8 +33,12 @@ List the ready features here:
 
 
 ## Screenshots
+- Exercise example
 ![App screenshot](./public/img/ScreenshotExample.png)
-
+- Workout page
+![App screenshot](./public/img/ScreenshotWOD.png)
+- Authentication requirement
+![App screenshot](./public/img/ScreenshotAuth.png)
 
 ## Setup
 - I will recomend to have the versions of Bootstrap and the languages up to date.
