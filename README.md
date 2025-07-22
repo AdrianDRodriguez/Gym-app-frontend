@@ -34,7 +34,6 @@ List the ready features here:
 
 ## Screenshots
 ![App screenshot](img/ScreenshotExample.png)
-<!-- If you have screenshots you'd like to share, include them here. -->
 
 
 ## Setup
