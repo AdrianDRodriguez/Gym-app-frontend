@@ -1,5 +1,4 @@
-# Project Name
-> Outline a brief description of your project.
+# Gym App Frontend
 > Live demo [_here_](https://gym-app-frontend-8mg5.onrender.com). <!-- If you have the project hosted somewhere, include the link here. -->
 
 ## Table of Contents
@@ -34,9 +33,9 @@ List the ready features here:
 
 
 ## Screenshots
-Exercises example (/img/screenshotExample.png)
-Workout (/img/screenshotWOD.png)
-Authentication requirement (/img/screenshotAuth.png)
+![Example] (/img/screenshotExample.png)
+![Workout] (/img/screenshotWOD.png)
+![Authentication] (/img/screenshotAuth.png)
 <!-- If you have screenshots you'd like to share, include them here. -->
 
 
@@ -49,7 +48,7 @@ Authentication requirement (/img/screenshotAuth.png)
 Project is: _complete_ 
 
 ## Room for Improvement
-This app still have a big room for improvement, there is a lot of feature that i would like to add in the future for example:
+This app still have a big room for improvement with this app, and this is some of the things i want to add in the future.
 
 Room for improvement:
 - Have a home page with a better fexibility and access to all pages
@@ -57,15 +56,15 @@ Room for improvement:
 - Authentication needs to me more strong and secure 
 
 To do:
-- Feature to be added 1
+- Feature to be added 1:
   A community seccion for users to share their experience with the exercises and workouts.
-- Feature to be added 2
+- Feature to be added 2:
   A page of pre-build workouts.
-- Feature to be added 3
+- Feature to be added 3:
   A AI that helps you build or build a workout for the user.
-- Feature to be added 4
+- Feature to be added 4:
   A Good habits for the user to find information about: How to have better discipline? or Examples for a good alimentation.
-- Feature to be added 5
+- Feature to be added 5:
   Make it a Mobile App
 
 ## Contact
