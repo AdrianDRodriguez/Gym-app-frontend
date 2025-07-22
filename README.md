@@ -34,16 +34,15 @@ List the ready features here:
 
 
 ## Screenshots
-![Example screenshot](/img/screenshotExample.png)
-![Example screenshot](/img/screenshotWOD.png)
-![Example screenshot](/img/screenshotAuth.png)
+Exercises example (/img/screenshotExample.png)
+Workout (/img/screenshotWOD.png)
+Authentication requirement (/img/screenshotAuth.png)
 <!-- If you have screenshots you'd like to share, include them here. -->
 
 
 ## Setup
-What are the project requirements/dependencies? Where are they listed? A requirements.txt or a Pipfile.lock file perhaps? Where is it located?
-
-Proceed to describe how to install / setup one's local environment / get started with the project.
+- I will recomend to have the versions of Bootstrap and the languages up to date.
+- Then proceed to clone the app and run `npm install` and you should be good to go.
 
 
 ## Project Status
@@ -59,15 +58,15 @@ Room for improvement:
 
 To do:
 - Feature to be added 1
- - A community seccion for users to share their experience with the exercises and workouts.
+  A community seccion for users to share their experience with the exercises and workouts.
 - Feature to be added 2
- - A page of pre-build workouts.
+  A page of pre-build workouts.
 - Feature to be added 3
- - A AI that helps you build or build a workout for the user.
+  A AI that helps you build or build a workout for the user.
 - Feature to be added 4
- - A Good habits for the user to find information about: How to have better discipline? or Examples for a good alimentation.
+  A Good habits for the user to find information about: How to have better discipline? or Examples for a good alimentation.
 - Feature to be added 5
- - Make it a Mobile App
+  Make it a Mobile App
 
 ## Contact
 Created by Adrian Rodriguez 
