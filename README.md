@@ -33,9 +33,7 @@ List the ready features here:
 
 
 ## Screenshots
-![Example] (/img/screenshotExample.png)
-![Workout] (/img/screenshotWOD.png)
-![Authentication] (/img/screenshotAuth.png)
+![Example screenshot](./img/screenshotExample.png)
 <!-- If you have screenshots you'd like to share, include them here. -->
 
 
