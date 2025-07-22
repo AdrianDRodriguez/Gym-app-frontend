@@ -1,12 +1,75 @@
-# React + Vite
+# Project Name
+> Outline a brief description of your project.
+> Live demo [_here_](https://gym-app-frontend-8mg5.onrender.com). <!-- If you have the project hosted somewhere, include the link here. -->
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Table of Contents
+* [General Info](#general-information)
+* [Technologies Used](#technologies-used)
+* [Features](#features)
+* [Screenshots](#screenshots)
+* [Setup](#setup)
+* [Project Status](#project-status)
+* [Room for Improvement](#room-for-improvement)
+* [Contact](#contact)
+<!-- * [License](#license) -->
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## General Information
+- Why I build this app? Well a lot of the normal people (Including me) struggle to track workouts, find new exercises, or create personalized routines without having to rely on scattered notes or separate apps. This Gym Fitness App centralizes all workout-related activities, helping users stay organized, motivated, and consistent in their fitness journey.
+<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Technologies Used
+- JavaScript - version 23.6.1
+- Bootstrap - version 5.3.5
+- HTML
+- CSS
+
+## Features
+List the ready features here:
+- The user can have and edit it's own workout
+- The user can see example videos from youtube
+- The user can rate the exercises
+- The user needs an account for create a exercise or add a exercise to it's workout
+
+
+## Screenshots
+![Example screenshot](/img/screenshotExample.png)
+![Example screenshot](/img/screenshotWOD.png)
+![Example screenshot](/img/screenshotAuth.png)
+<!-- If you have screenshots you'd like to share, include them here. -->
+
+
+## Setup
+What are the project requirements/dependencies? Where are they listed? A requirements.txt or a Pipfile.lock file perhaps? Where is it located?
+
+Proceed to describe how to install / setup one's local environment / get started with the project.
+
+
+## Project Status
+Project is: _complete_ 
+
+## Room for Improvement
+This app still have a big room for improvement, there is a lot of feature that i would like to add in the future for example:
+
+Room for improvement:
+- Have a home page with a better fexibility and access to all pages
+- Better display of exercises and examples
+- Authentication needs to me more strong and secure 
+
+To do:
+- Feature to be added 1
+ - A community seccion for users to share their experience with the exercises and workouts.
+- Feature to be added 2
+ - A page of pre-build workouts.
+- Feature to be added 3
+ - A AI that helps you build or build a workout for the user.
+- Feature to be added 4
+ - A Good habits for the user to find information about: How to have better discipline? or Examples for a good alimentation.
+- Feature to be added 5
+ - Make it a Mobile App
+
+## Contact
+Created by Adrian Rodriguez 
+- Email: adrianapps.345@gmail.com 
+- Feel free to contact me!
